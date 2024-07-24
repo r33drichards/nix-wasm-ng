@@ -22,11 +22,11 @@
 
           packages.default = nixos-generators.nixosGenerate {
             system = "x86_64-linux";
-            format = "iso";
+            format = "raw";
 
             modules = [
               {
-                # boot.kernelParams = [ "console=tty0" ];
+                boot.kernelParams = [ "console=COM1" ];
                 users.users.alice = {
                   isNormalUser = true;
                   extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
