@@ -21,7 +21,7 @@
         {
 
           packages.default = nixos-generators.nixosGenerate {
-            system = "x86_64-linux";
+            system = "x86_32-linux";
             format = "raw";
 
             modules = [
