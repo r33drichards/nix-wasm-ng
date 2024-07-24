@@ -26,7 +26,7 @@
 
             modules = [
               {
-                boot.kernelParams = [ "console=tty0" ];
+                # boot.kernelParams = [ "console=tty0" ];
                 users.users.alice = {
                   isNormalUser = true;
                   extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
