@@ -26,7 +26,7 @@
 
             modules = [
               {
-                boot.kernelParams = [ "console=COM1" ];
+                # boot.kernelParams = [ "console=COM1" ];
                 users.users.alice = {
                   isNormalUser = true;
                   extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
