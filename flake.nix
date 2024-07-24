@@ -27,6 +27,8 @@
             modules = [
               {
                 # boot.kernelParams = [ "console=COM1" ];
+                # https://discourse.nixos.org/t/creating-nixos-iso-for-an-older-laptop-with-i686-32bit/26002/2
+                nixpkgs.hostPlatform.system = "i686-linux";
                 users.users.alice = {
                   isNormalUser = true;
                   extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
